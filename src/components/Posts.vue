@@ -7,11 +7,13 @@
           src="../assets/user-avatar.jpg"
           alt="Vue logo"
         />
-        <h3 class="card-title">{{ post.title }}</h3>
+        <div class="card-content-area">
+          <h3 class="card-title">{{ post.title }}</h3>
 
-        <p class="card-text">
-          {{ post.body }}
-        </p>
+          <p class="card-text">
+            {{ post.body }}
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -45,9 +47,17 @@ export default {
 <style>
 .card {
   width: 100% !important;
+  padding: 1rem 0;
+  background-color: rgb(236, 213, 184);
 }
 
 .card-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-content-area {
 }
 
 .card-img-top {

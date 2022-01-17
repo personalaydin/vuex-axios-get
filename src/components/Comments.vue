@@ -1,7 +1,7 @@
 <template>
   <div class="comments container">
     <div class="card" v-for="comment of comments" :key="comment.id">
-      <div class="card-body">
+      <div class="cards-body">
         <h3 class="card-title">{{ comment.name }}</h3>
         <h5 class="card-subtitle mb-2 text-muted">{{ comment.email }}</h5>
         <h6 class="card-subtitle mb-2">{{ comment.id }}</h6>
