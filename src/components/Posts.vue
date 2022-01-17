@@ -9,7 +9,6 @@
         />
         <div class="card-content-area">
           <h3 class="card-title">{{ post.title }}</h3>
-
           <p class="card-text">
             {{ post.body }}
           </p>
@@ -55,9 +54,6 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.card-content-area {
 }
 
 .card-img-top {
